@@ -217,10 +217,10 @@ int main(int argc, char** argv)
 	while (getline(ifs, line)) classes.push_back(line);
 	
 	// Give the configuration and weight files for the model
-	//String modelConfiguration = pathYoloPrefix + "yolov3.cfg";
-	//String modelWeights = pathYoloPrefix + "yolov3.weights";
-	String modelConfiguration = pathYoloPrefix + "yolov3-spp.cfg";
-	String modelWeights = pathYoloPrefix + "yolov3-spp.weights";
+	String modelConfiguration = pathYoloPrefix + "yolov3.cfg";
+	String modelWeights = pathYoloPrefix + "yolov3.weights";
+	//String modelConfiguration = pathYoloPrefix + "yolov3-spp.cfg";
+	//String modelWeights = pathYoloPrefix + "yolov3-spp.weights";
 
 	// Load the network
 	/*Net*/ net = readNetFromDarknet(modelConfiguration, modelWeights);
